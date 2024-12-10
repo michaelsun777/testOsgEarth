@@ -1,0 +1,6 @@
+[submodule "3rd/Osg"]
+	path = 3rd/Osg
+	url = https://github.com/openscenegraph/OpenSceneGraph.git
+[submodule "3rd/osgearth"]
+	path = 3rd/osgearth
+	url = https://github.com/gwaldron/osgearth.git
