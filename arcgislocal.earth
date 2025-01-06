@@ -1,0 +1,15 @@
+
+<Map name="Demo: ArcGIS Server">
+
+   
+
+    <ArcGISServerImage name="World Imagery">
+        <url>https://https://10.200.1.18:6443/arcgis/rest/services/SampleWorldCities/MapServer/</url>
+        <nodata_image>https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/100/0/0.jpeg</nodata_image>
+    </ArcGISServerImage>
+
+    
+    <!-- <Debug/>     -->
+
+    <xi:include href="viewpoints.xml"/>
+</Map>

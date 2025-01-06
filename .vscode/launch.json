@@ -9,7 +9,7 @@
             "type": "cppdbg",                                                //配置类型
             "request": "launch",
             "program": "${workspaceFolder}/build/testOsgearth", //${fileBasenameNoExtension} //调试时执行文件的路径
-            "args": [],                                                         //调试时需要的参数 "--use-native"  "./arcgisonline.earth" "./arcgislocal.earth"
+            "args": [],                                                         //调试时需要的参数 "--use-native"  "./arcgisonline.earth" "./arcgislocal.earth" "./mymap.earth"
             "stopAtEntry": false,                                           //可选参数。如果为 true，则调试程序应在目标的入口点处停止。如果传递了 processId，则不起任何作用。
             "cwd": "${workspaceFolder}",                                    //目标的工作目录（项目的根目录）
             "environment": [

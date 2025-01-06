@@ -1,0 +1,8 @@
+<map name="MyMap" type="geocentric" version="2">
+  <image name="t1" driver="gdal">
+    <url>data/china_weitu.tif</url>
+  </image>
+  <image name="t2" driver="arcgis">
+    <url>https://10.200.1.18:6443/arcgis/rest/services/china_weitu/MapServer</url>
+  </image>
+</map>

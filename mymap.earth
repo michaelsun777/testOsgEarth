@@ -1,0 +1,42 @@
+<map name="locgis" type="geocentric" version="2" encoding="UTF-8">
+ 
+ <image driver="tms">
+    <url>http://10.200.1.27:1180/WeServer/tms/1.0.0/acimage/</url>
+    <profile>global-geodetic</profile>
+    <visible>true</visible>
+  </image> 
+
+ <image driver="tms">
+    <url>http://10.200.1.27:1180/WeServer/tms/1.0.0/aclabel/</url>
+    <profile>global-geodetic</profile>
+    <visible>true</visible>
+        <extensions>png</extensions>
+        <color_filters>
+                <chroma_key>
+                  <a>0</a>
+                  <distance>0.0099999998</distance>
+                </chroma_key>
+  </color_filters>
+  </image>
+
+  <elevation driver="tms">
+    <url>http://10.200.1.27:1180/WeServer/tms/1.0.0/acdem/</url>
+    <profile>global-geodetic</profile>
+	<visible>true</visible>
+  </elevation>
+ 
+  <options>
+    <!--cache_policy usage="cache_only"-->
+    <!--cache_policy usage="read_write"-->
+    <elevation_tile_size>65</elevation_tile_size>
+
+    <terrain>
+      <first_lod>2</first_lod>
+      <mind_lod>19</mind_lod>
+      <min_tile_range_factor>7</min_tile_range_factor>
+    </terrain>
+
+  </options>
+
+</map>
+

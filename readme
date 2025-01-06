@@ -1,0 +1,29 @@
+sudo apt-get install mesa-common-dev freeglut3 freeglut3-dev libglew-dev libgdal-dev gdal-bin libprotobuf-dev protobuf-compiler
+sudo apt-get install curl && sudo apt-get install libcurl4-openssl-dev libgles2-mesa-dev libfreetype6-dev libfltk1.3-dev \
+libgstreamer-plugins-base1.0-dev libsdl2-dev libsdl1.2-dev libwxgtk3.0-gtk3-dev libtiff-dev libgl1-mesa-dev openssl libssl-dev
+
+sudo apt install libgtkgl2.0-dev libilmbase-dev libinventor1 jasper libopenexr-dev libdcmtk-dev libpoppler-glib-dev \
+librsvg2-dev libgtkgl2.0-dev libnvtt-dev libasio-dev liblaszip-dev
+
+mkdir -p 3rd/Osg/build
+cd 3rd/Osg/build
+cmake ..
+make -j
+
+cd ../../
+cd osgearth
+mkdir build
+cmake ..
+make -j
+
+cd ../../
+cd osgQt
+mkdir build
+cmake ..
+make -j
+
+cd ../../../
+mkdir build
+cmake ..
+make -j
+

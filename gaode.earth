@@ -1,0 +1,17 @@
+<Map name="Demo: ArcGIS Server">
+
+<!-- Template
+http://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}
+
+http://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&amp;amp;size=1&amp;amp;scale=1&amp;amp;style=7&amp;amp;x={x}&amp;amp;y={y}&amp;amp;z={z}
+-->
+
+<layer name= gaode" type= tms">
+    <url>http://webst01.is.autonavi.com/appmaptile?style=6&amp;amp;x=${x}&amp;amp;y=${y}&amp;amp;z=${z}</url>
+    <profile>spherical-mercator</profile>
+    <format>png</format>
+    <cache enabled>false</cache enabled>
+</layer>
+
+
+</Map>
